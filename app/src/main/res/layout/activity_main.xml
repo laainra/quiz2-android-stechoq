@@ -15,7 +15,7 @@
         <LinearLayout
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="#FF0000"
+            android:background="#ED3237"
             android:gravity="center">
 
             <!-- Icon Home -->
@@ -33,7 +33,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#FFFF00"
+            android:background="#F4CC2D"
             android:orientation="vertical">
 
             <!-- Title -->
