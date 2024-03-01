@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- App Bar -->
+    <!-- App Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Kolom 1 (Background Merah) -->
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#FF0000"
+            android:gravity="center">
+
+            <!-- Icon Home -->
+            <ImageView
+                android:id="@+id/icon_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home_white_24dp"
+                android:contentDescription="Icon Home" />
+
+        </LinearLayout>
+
+        <!-- Kolom 2 (Background Kuning) -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFF00"
+            android:orientation="vertical">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Pendaftaran"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <FrameLayout
+            android:layout_width="92dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="20dp">
+
+
+            <!-- Background -->
+            <View
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="#00afef"/>
+
+            <!-- Icon -->
+
+            <!-- Kolom 1 -->
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/person_white_24dp"
+                android:contentDescription="Profile Image" />
+        </FrameLayout>
+        <!-- Kolom 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Textfield 1 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:paddingLeft="10dp"
+                android:background="#00A859"
+                android:text="Nama"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginVertical="20dp"/>
+
+            <!-- Textfield 2 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="#00A859"
+                android:text="NIM"
+                android:paddingLeft="10dp"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- Textfield 3 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:paddingLeft="10dp"
+                android:background="#00A859"
+                android:text="Email"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Button -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#3e4095"
+        android:text="Daftar"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+</LinearLayout>
